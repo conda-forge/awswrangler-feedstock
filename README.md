@@ -1,4 +1,4 @@
-About awswrangler
+About AWS Data Wrangler (awswrangler)
 =================
 
 Home: https://github.com/awslabs/aws-data-wrangler
@@ -7,9 +7,21 @@ Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Utility belt to handle data on AWS
+Summary: DataFrames on AWS
 
-Utility belt to handle data on AWS
+## [Read the Docs](https://aws-data-wrangler.readthedocs.io)
+
+## Resources
+- [Use Cases](https://github.com/awslabs/aws-data-wrangler#use-cases)
+  - [Pandas](https://github.com/awslabs/aws-data-wrangler#pandas)
+  - [PySpark](https://github.com/awslabs/aws-data-wrangler#pyspark)
+  - [General](https://github.com/awslabs/aws-data-wrangler#general)
+- [Install](https://aws-data-wrangler.readthedocs.io/install.html)
+- [Examples](https://aws-data-wrangler.readthedocs.io/examples.html)
+- [Tutorials](https://aws-data-wrangler.readthedocs.io/tutorials.html)
+- [API Reference](https://aws-data-wrangler.readthedocs.io/api/awswrangler.html)
+- [License](https://aws-data-wrangler.readthedocs.io/license.html)
+- [Contributing](https://aws-data-wrangler.readthedocs.io/contributing.html)
 
 Current build status
 ====================
