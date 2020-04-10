@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "0.3.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a35506dd39225343ad610f3d665297f1e1778124a3e469c9422ca006ea31663
+  sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
 
 build:
   noarch: python
@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6,<3.9
     - pip
+    - numpy ~=1.18.2
   run:
-    - python >=3.6
+    - python >=3.6,<3.9
     - numpy ~=1.18.2
     - pandas ~=1.0.3
     - pyarrow ~=0.16.0
