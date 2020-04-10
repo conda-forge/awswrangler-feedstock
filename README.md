@@ -7,21 +7,40 @@ Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: DataFrames on AWS
+Summary: Pandas on AWS
 
-## [Read the Docs](https://aws-data-wrangler.readthedocs.io)
+## [Read The Docs](https://aws-data-wrangler.readthedocs.io/)
 
-## Resources
-- [Use Cases](https://github.com/awslabs/aws-data-wrangler#use-cases)
-  - [Pandas](https://github.com/awslabs/aws-data-wrangler#pandas)
-  - [PySpark](https://github.com/awslabs/aws-data-wrangler#pyspark)
-  - [General](https://github.com/awslabs/aws-data-wrangler#general)
-- [Install](https://aws-data-wrangler.readthedocs.io/install.html)
-- [Examples](https://aws-data-wrangler.readthedocs.io/examples.html)
-- [Tutorials](https://aws-data-wrangler.readthedocs.io/tutorials.html)
-- [API Reference](https://aws-data-wrangler.readthedocs.io/api/awswrangler.html)
-- [License](https://aws-data-wrangler.readthedocs.io/license.html)
-- [Contributing](https://aws-data-wrangler.readthedocs.io/contributing.html)
+- [**What is AWS Data Wrangler?**](https://aws-data-wrangler.readthedocs.io/en/latest/what.html)
+- [**Install**](https://aws-data-wrangler.readthedocs.io/en/latest/install.html)
+  - [PyPi (pip)](https://aws-data-wrangler.readthedocs.io/en/latest/install.html#pypi-pip)
+  - [Conda](https://aws-data-wrangler.readthedocs.io/en/latest/install.html#conda)
+  - [AWS Lambda Layer](https://aws-data-wrangler.readthedocs.io/en/latest/install.html#aws-lambda-layer)
+  - [AWS Glue Wheel](https://aws-data-wrangler.readthedocs.io/en/latest/install.html#aws-glue-wheel)
+  - [Amazon SageMaker Notebook](https://aws-data-wrangler.readthedocs.io/en/latest/install.html#amazon-sagemaker-notebook)
+  - [Amazon SageMaker Notebook Lifecycle](https://aws-data-wrangler.readthedocs.io/en/latest/install.html#amazon-sagemaker-notebook-lifecycle)
+  - [EMR](https://aws-data-wrangler.readthedocs.io/en/latest/install.html#emr)
+  - [From source](https://aws-data-wrangler.readthedocs.io/en/latest/install.html#from-source)
+- [**Tutorials**](https://github.com/awslabs/aws-data-wrangler/tree/master/tutorials)
+  - [01 - Introduction](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/01%20-%20Introduction.ipynb)
+  - [02 - Sessions](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/02%20-%20Sessions.ipynb)
+  - [03 - Amazon S3](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/03%20-%20Amazon%20S3.ipynb)
+  - [04 - Parquet Datasets](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/04%20-%20Parquet%20Datasets.ipynb)
+  - [05 - Glue Catalog](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/05%20-%20Glue%20Catalog.ipynb)
+  - [06 - Amazon Athena](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/06%20-%20Amazon%20Athena.ipynb)
+  - [07 - Databases (Redshift, MySQL and PostgreSQL)](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/07%20-%20Redshift%2C%20MySQL%2C%20PostgreSQL.ipynb)
+  - [08 - Redshift - Copy & Unload.ipynb](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/08%20-%20Redshift%20-%20Copy%20%26%20Unload.ipynb)
+  - [09 - Redshift - Append, Overwrite and Upsert.ipynb](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/09%20-%20Redshift%20-%20Append%2C%20Overwrite%2C%20Upsert.ipynb)
+  - [10 - Parquet Crawler.ipynb](https://github.com/awslabs/aws-data-wrangler/blob/master/tutorials/10%20-%20Parquet%20Crawler.ipynb)
+- [**API Reference**](https://aws-data-wrangler.readthedocs.io/en/latest/api.html)
+  - [Amazon S3](https://aws-data-wrangler.readthedocs.io/en/latest/api.html#amazon-s3)
+  - [AWS Glue Catalog](https://aws-data-wrangler.readthedocs.io/en/latest/api.html#aws-glue-catalog)
+  - [Amazon Athena](https://aws-data-wrangler.readthedocs.io/en/latest/api.html#amazon-athena)
+  - [Databases (Redshift, PostgreSQL, MySQL)](https://aws-data-wrangler.readthedocs.io/en/latest/api.html#databases-redshift-postgresql-mysql)
+  - [EMR Cluster](https://aws-data-wrangler.readthedocs.io/en/latest/api.html#emr-cluster)
+  - [CloudWatch Logs](https://aws-data-wrangler.readthedocs.io/en/latest/api.html#cloudwatch-logs)
+- [**License**](https://github.com/awslabs/aws-data-wrangler/blob/master/LICENSE)
+- [**Contributing**](https://github.com/awslabs/aws-data-wrangler/blob/master/CONTRIBUTING.md)
 
 Current build status
 ====================
