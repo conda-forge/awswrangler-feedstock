@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "0.3.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a35506dd39225343ad610f3d665297f1e1778124a3e469c9422ca006ea31663
+  sha256: 73f3d5bef31d5446cf7cd4a1f127d82c2c1688931e4f66ca4514af4b83ae6e14
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Pandas on AWS'
+  summary: Pandas on AWS
   description: |
     An open-source Python package that extends the power of Pandas library to AWS connecting DataFrames
     and AWS data related services (Amazon Redshift, AWS Glue, Amazon Athena, Amazon EMR, etc).
