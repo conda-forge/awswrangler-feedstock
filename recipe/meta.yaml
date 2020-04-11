@@ -19,7 +19,6 @@ requirements:
   host:
     - python >=3.6,<3.9
     - pip
-    - numpy ~=1.18.2
   run:
     - python >=3.6,<3.9
     - numpy ~=1.18.2
