@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c8a8883a7c935ee2704ffefb80904bb813d438449e0b4d4ea1b8a302621aecbc
+  sha256: 42ff2644ee2fd6f5a40cb111f8ad7986ad6da711b07041b8b9c1e6e90a412408
 
 
 build:
