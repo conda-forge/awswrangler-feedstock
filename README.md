@@ -11,7 +11,7 @@ Summary: Pandas on AWS
 
 An open-source Python package that extends the power of Pandas library to AWS connecting DataFrames
 and AWS data related services (Amazon Redshift, AWS Glue, Amazon Athena, Amazon EMR, Amazon QuickSight, etc).
-Built on top of other open-source projects like Pandas, Apache Arrow, Boto3, s3fs, SQLAlchemy,
+Built on top of other open-source projects like Pandas, Apache Arrow, Boto3, SQLAlchemy,
 Psycopg2 and PyMySQL, it offers abstracted functions to execute usual ETL tasks like load/unload
 data from Data Lakes, Data Warehouses and Databases.
 
