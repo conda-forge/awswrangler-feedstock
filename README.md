@@ -5,9 +5,11 @@ Home: https://github.com/awslabs/aws-data-wrangler
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/awswrangler-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pandas on AWS
+
+Documentation: https://aws-data-wrangler.readthedocs.io
 
 An open-source Python package that extends the power of Pandas library to AWS connecting DataFrames
 and AWS data related services (Amazon Redshift, AWS Glue, Amazon Athena, Amazon EMR, Amazon QuickSight, etc).
