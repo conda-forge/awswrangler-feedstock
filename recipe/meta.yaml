@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 97c71c3296908f20da30c8c83e652be966cb312ab3dcebef3d9137bcd5286c55
+  sha256: 5f369fccf791e80efa7bb70496182857f35233275f66ae62d476e68be8892165
 
 
 build:
@@ -24,11 +24,12 @@ requirements:
     - boto3 >=1.12.49,<2.0.0
     - botocore >=1.15.49,<2.0.0
     - numpy >=1.18.0,<1.20.0
-    - pandas >=1.1.0,<1.2.0
+    - pandas >=1.1.0,<=1.2.0
     - pyarrow ~=2.0.0
     - redshift_connector ~=2.0.0
-    - pymysql >=0.9.0,<0.11.0
+    - pymysql >=0.9.0,<1.1.0
     - pg8000 ~=1.16.0
+    - openpyxl
 
 test:
   imports:
@@ -42,7 +43,9 @@ about:
   summary: Pandas on AWS
   description: |
     An open-source Python package that extends the power of Pandas library to AWS connecting DataFrames
-    and AWS data related services (Amazon Redshift, AWS Glue, Amazon Athena, Amazon EMR, Amazon QuickSight, etc).
+    and AWS data related services. Easy integration with Athena, Glue, Redshift, Timestream, QuickSight,
+    Chime, CloudWatchLogs, DynamoDB, EMR, SecretManager, PostgreSQL, MySQL, SQLServer and 
+    S3 (Parquet, CSV, JSON and EXCEL).
     Built on top of other open-source projects like Pandas, Apache Arrow and Boto3, 
     it offers abstracted functions to execute usual ETL tasks like load/unload
     data from Data Lakes, Data Warehouses and Databases.
