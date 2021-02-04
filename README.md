@@ -12,7 +12,9 @@ Summary: Pandas on AWS
 Documentation: https://aws-data-wrangler.readthedocs.io
 
 An open-source Python package that extends the power of Pandas library to AWS connecting DataFrames
-and AWS data related services (Amazon Redshift, AWS Glue, Amazon Athena, Amazon EMR, Amazon QuickSight, etc).
+and AWS data related services. Easy integration with Athena, Glue, Redshift, Timestream, QuickSight,
+Chime, CloudWatchLogs, DynamoDB, EMR, SecretManager, PostgreSQL, MySQL, SQLServer and
+S3 (Parquet, CSV, JSON and EXCEL).
 Built on top of other open-source projects like Pandas, Apache Arrow and Boto3,
 it offers abstracted functions to execute usual ETL tasks like load/unload
 data from Data Lakes, Data Warehouses and Databases.
