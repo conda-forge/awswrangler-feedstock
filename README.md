@@ -128,6 +128,7 @@ Feedstock Maintainers
 
 * [@igorborgest](https://github.com/igorborgest/)
 * [@jaidisido](https://github.com/jaidisido/)
+* [@kukushking](https://github.com/kukushking/)
 * [@maximerihouey](https://github.com/maximerihouey/)
 * [@ncolomer](https://github.com/ncolomer/)
 * [@nicolas-geniteau](https://github.com/nicolas-geniteau/)
