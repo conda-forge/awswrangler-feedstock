@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "2.10.0" %}
+{% set version = "2.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e2737cdf291a26a8647753bbe99f1c91f643c009b6ca108a384f796f788e014f
+  sha256: b6cc7374a23447aadb7eb3c66b141ea020153a92e9cec82cb0f387413e9532b1
 
 
 build:
@@ -18,6 +18,7 @@ build:
 requirements:
   host:
     - python >=3.6,<3.10
+    - poetry
     - pip
   run:
     - python >=3.6,<3.10
@@ -25,10 +26,10 @@ requirements:
     - botocore >=1.19.8,<2.0.0
     - numpy >=1.18.0,<2.0.0
     - pandas >=1.1.0,<2.0.0
-    - pyarrow >=2.0.0,<4.1.0
-    - redshift_connector ~=2.0.882
+    - pyarrow >=2.0.0,<5.1.0
+    - redshift_connector ~=2.0.884
     - pymysql >=0.9.0,<1.1.0
-    - pg8000 >=1.16.0,<1.21.0
+    - pg8000 >=1.16.0,<1.22.0
     - openpyxl ~=3.0.0
 
 test:
