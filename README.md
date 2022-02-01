@@ -1,7 +1,7 @@
 About awswrangler
 =================
 
-Home: https://github.com/awslabs/aws-data-wrangler
+Home: https://aws-data-wrangler.readthedocs.io/
 
 Package license: Apache-2.0
 
@@ -9,12 +9,15 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/awswrangler-fee
 
 Summary: Pandas on AWS
 
-Documentation: https://aws-data-wrangler.readthedocs.io
+Development: https://github.com/awslabs/aws-data-wrangler
+
+Documentation: https://aws-data-wrangler.readthedocs.io/
 
 An open-source Python package that extends the power of Pandas library to AWS connecting DataFrames
 and AWS data related services. Easy integration with Athena, Redshift, Glue, Timestream, QuickSight,
 Chime, CloudWatchLogs, DynamoDB, EMR, SecretManager, PostgreSQL, MySQL, SQLServer and
 S3 (Parquet, CSV, JSON and EXCEL).
+
 Built on top of other open-source projects like Pandas, Apache Arrow and Boto3,
 it offers abstracted functions to execute usual ETL tasks like load/unload
 data from Data Lakes, Data Warehouses and Databases.
@@ -66,7 +69,8 @@ conda search awswrangler --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -126,6 +130,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@BastianZim](https://github.com/BastianZim/)
 * [@igorborgest](https://github.com/igorborgest/)
 * [@jaidisido](https://github.com/jaidisido/)
 * [@kukushking](https://github.com/kukushking/)
