@@ -37,6 +37,7 @@ requirements:
     - gremlinpython >=3.5.2,<4.0.0
     - backoff >=1.11.1,<2.0.0
     - sparqlwrapper >=1.8.5,<2.0.0
+    - rdflib >=4.0,<7.0.0
   run_constrained:
     - pyodbc >=4.0.32,=4.0
 
