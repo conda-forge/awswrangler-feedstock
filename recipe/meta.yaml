@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "2.15.1" %}
+{% set version = "2.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e666edf22a7db25453f93191903137833bc9df3eff4cf2ecdf6b450c5a55a3db
+  sha256: b1db6730d4d59042268f9f00f490a66e9bd1b68c8629921b88f2951703f58c83
 
 build:
   noarch: python
@@ -40,6 +40,7 @@ requirements:
     - pyodbc >=4.0.32,=4.0
     - sparqlwrapper >=1.8.5,=1.8
     - rdflib >=6.0.0,=6.0
+    - oracledb >=1.0.0,=1.0
 
 test:
   imports:
@@ -79,3 +80,5 @@ extra:
     - jaidisido
     - kukushking
     - BastianZim
+    - malachi-constant
+    - cnfait
