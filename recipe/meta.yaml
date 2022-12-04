@@ -48,7 +48,7 @@ test:
   imports:
     - awswrangler
   commands:
-     - pip check
+    - pip check
   requires:
     - pip
 
