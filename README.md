@@ -1,7 +1,7 @@
 About awswrangler
 =================
 
-Home: https://aws-data-wrangler.readthedocs.io/
+Home: https://aws-sdk-pandas.readthedocs.io
 
 Package license: Apache-2.0
 
@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/awswrangler-fee
 
 Summary: Pandas on AWS
 
-Development: https://github.com/awslabs/aws-data-wrangler
+Development: https://github.com/aws/aws-sdk-pandas
 
-Documentation: https://aws-data-wrangler.readthedocs.io/
+Documentation: https://aws-sdk-pandas.readthedocs.io
 
 An open-source Python package that extends the power of Pandas library to AWS connecting DataFrames
 and AWS data related services. Easy integration with Athena, Redshift, Glue, Timestream, Neptune,
@@ -158,6 +158,7 @@ Feedstock Maintainers
 =====================
 
 * [@BastianZim](https://github.com/BastianZim/)
+* [@LeonLuttenberger](https://github.com/LeonLuttenberger/)
 * [@cnfait](https://github.com/cnfait/)
 * [@igorborgest](https://github.com/igorborgest/)
 * [@jaidisido](https://github.com/jaidisido/)
