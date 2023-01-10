@@ -37,7 +37,7 @@ requirements:
     - pymysql >=1.0.0,<2.0.0
     - redshift_connector >=2.0.889,<2.1.0
     - requests-aws4auth >=1.1.1,<2.0.0
-    - numpy >=1.21.0,<2
+    - numpy >=1.21.0,<2.0.0
   run_constrained:
     - pyodbc >=4.0.32,=4.0
     - sparqlwrapper >=1.8.5,<3.0.0
