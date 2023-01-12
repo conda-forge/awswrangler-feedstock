@@ -9,7 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 274bcf815e6bd07ed85dc0cc2a53d6defe3b43974bc1d31cab3d2d645b77e147
   patches:
-    - 0001-Make-numpy-Conda-Forge-compatible.patch
+    - 0001-Make-compatible.patch
 
 build:
   noarch: python
