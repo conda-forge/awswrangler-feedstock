@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "2.19.0" %}
+{% set version = "2.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 274bcf815e6bd07ed85dc0cc2a53d6defe3b43974bc1d31cab3d2d645b77e147
+  sha256: 764a2c153230b8f6722a01d541b7340f32b6e52f1940a29a8d106f00ffab7f67
   patches:
     - 0001-Make-compatible.patch
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
