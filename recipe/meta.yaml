@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "2.20.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 110ae666206f3e1611c81d3a5886ce2cff1f2a874f35612ee5047f2aa19a607d
-  patches:
-    - 0001-Make-compatible.patch
+  sha256: 9a2384ec4dbfd83ac8cef859d127924f89b3b3f1b6242da89606a296af3d68ec
 
 build:
   noarch: python
@@ -18,31 +16,39 @@ build:
 
 requirements:
   host:
-    - python >=3.7.1,<4.0
+    - python >=3.8,<4.0
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.7.1,<4.0
-    - backoff >=1.11.1,<3.0.0
-    - boto3 >=1.24.11,<2.0.0
-    - botocore >=1.27.11,<2.0.0
-    - gremlinpython >=3.5.2,<4.0.0
-    - jsonpath-ng >=1.5.3,<2.0.0
-    - openpyxl >=3.0.0,<3.1.0
-    - opensearch-py >=1,<3
-    - pandas >=1.2.0,<=1.5.1,!=1.5.0
-    - pg8000 >=1.20.0,<2.0.0
-    - progressbar2 >=4.0.0,<5.0.0
-    - pyarrow >=2.0.0,<10.1.0
-    - pymysql >=1.0.0,<2.0.0
-    - redshift_connector >=2.0.889,<2.1.0
-    - requests-aws4auth >=1.1.1,<2.0.0
-    - numpy >=1.21.0,<2.0.0
+    - python >=3.8,<4.0
+    - boto3 >=1.20.32,<2.0.0
+    - botocore >=1.23.32,<2.0.0
+    - pandas >=1.2.0,!=1.5.0,<2.0.0
+    - numpy >=1.18.0,<2.0.0
+    - pyarrow >=7.0.0
+    - typing-extensions >=4.4.0,<5.0.0
   run_constrained:
+    # Databases
+    - redshift_connector >=2.0.0,<3.0.0
+    - pymysql >=1.0.0,<2.0.0
+    - pg8000 >=1.29.0,<2.0.0
     - pyodbc >=4.0.32,=4.0
-    - sparqlwrapper >=1.8.5,<3.0.0
-    - rdflib >=6.0.0,=6.0
     - oracledb >=1.0.0,=1.0
+    # Graph
+    - gremlinpython >=3.6.2,<4.0.0
+    - sparqlwrapper >=1.8.5,<3.0.0
+    # OpenSearch
+    - opensearch-py >=2,<3
+    - requests-aws4auth >=1.1.1,<2.0.0
+    - jsonpath-ng >=1.5.3,<2.0.0
+    # Other
+    - openpyxl >=3.0.0,<3.1.0
+    - progressbar2 >=4.0.0,<5.0.0
+    - rdflib >=6.0.0,=6.0
+    # Distributed
+    - modin >=0.16.0,<0.20.0
+    - ray[default,data] >=2.0.0,<2.4.0
+
 
 test:
   imports:
