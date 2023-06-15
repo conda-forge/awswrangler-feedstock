@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 96b1bb4c92a9628aad91383a0476ab3476d5c4504cae9546036c2b408501f70b
+  sha256: f12047d32463d8f0ca51c30cd50172efb742d890a0f602dc2e828878b02ba90b
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - numpy >=1.18.0,<2.0.0
     - pyarrow >=7.0.0
     - typing-extensions >=4.4.0,<5.0.0
-    - packaging >=23.1.0,<24.0.0
+    - packaging >=21.1,<24.0
   run_constrained:
     # Databases
     - redshift_connector >=2.0.0,<3.0.0
