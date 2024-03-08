@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "3.7.0" %}
+{% set version = "3.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8b81770fee4ed574f90ef97566d4b45f4d7cef4d26d0ef9f2aeafcd7f11728ac
+  sha256: b9bb6c8e953c08e22c9b4056ff703be5c418dca1b1a16c3dd820458766a872cf
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - botocore >=1.23.32,<2.0.0
     - pandas >=1.2.0,<3.0.0
     - numpy >=1.18.0,<2.0.0
-    - pyarrow >=7.0.0
+    - pyarrow >=8.0.0
     - typing-extensions >=4.4.0,<5.0.0
     - packaging >=21.1,<24.0
   run_constrained:
