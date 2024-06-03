@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -53,7 +53,7 @@ requirements:
     - geopandas >=0.13.2,<1.0.0
     # Distributed
     - modin >=0.23.1post0,<1.0.0
-    - ray[default,data] >=2.9.0,<3.0.0
+    - ray >=2.9.0,<3.0.0
 
 
 test:
