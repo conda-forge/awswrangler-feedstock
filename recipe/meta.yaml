@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "3.10.0" %}
+{% set version = "3.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cccc96ff32b282a0bebe9066f3d90e66ad5697068107c7175a06e095b2cad5ec
+  sha256: 2c12c522ddf4f59214bb7b79ecab585fa8bb96ea6300e48126962485f1598ddf
 
 build:
   noarch: python
@@ -41,7 +41,7 @@ requirements:
     - sparqlwrapper >=2.0.0,<3.0.0
     - requests >=2.0.0,<3.0.0
     - aiohttp >=3.9.0,<4.0.0
-    - async-timeout >=4.0.3,<5.0.0
+    - async-timeout >=4.0.3,<6.0.0
     # OpenSearch
     - opensearch-py >=2,<3
     - requests-aws4auth >=1.1.1,<2.0.0
@@ -50,7 +50,7 @@ requirements:
     - openpyxl >=3.0.0,<4.0.0
     - progressbar2 >=4.0.0,<5.0.0
     - rdflib >=6.0.0,=6.0
-    - deltalake >=0.18.0,<0.21.0
+    - deltalake >=0.6.4,<0.22.0
     - geopandas >=0.13.2,<1.0.0
     # Distributed
     - modin >=0.23.1post0,<1.0.0
