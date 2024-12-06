@@ -1,13 +1,13 @@
 {% set name = "awswrangler" %}
-{% set version = "3.9.1" %}
+{% set version = "3.10.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 93b42a7dedc34da16236e63f6454ccc06b89a95186e216eaf25d19e1667b665a
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: cccc96ff32b282a0bebe9066f3d90e66ad5697068107c7175a06e095b2cad5ec
 
 build:
   noarch: python
@@ -24,10 +24,11 @@ requirements:
     - boto3 >=1.20.32,<2.0.0
     - botocore >=1.23.32,<2.0.0
     - pandas >=1.2.0,<3.0.0
-    - numpy >=1.18.0,<2.0.0
+    - numpy >=1.18.0,<3.0.0
     - pyarrow >=8.0.0
     - typing-extensions >=4.4.0,<5.0.0
-    - packaging >=21.1,<24.0
+    - packaging >=21.1,<25.0
+    - setuptools
   run_constrained:
     # Databases
     - redshift_connector >=2.0.0,<3.0.0
@@ -49,11 +50,11 @@ requirements:
     - openpyxl >=3.0.0,<4.0.0
     - progressbar2 >=4.0.0,<5.0.0
     - rdflib >=6.0.0,=6.0
-    - deltalake >=0.6.4,<0.16.0
+    - deltalake >=0.18.0,<0.21.0
     - geopandas >=0.13.2,<1.0.0
     # Distributed
     - modin >=0.23.1post0,<1.0.0
-    - ray >=2.9.0,<3.0.0
+    - ray >=2.30.0,<3.0.0
 
 
 test:
