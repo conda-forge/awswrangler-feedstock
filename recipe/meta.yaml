@@ -1,5 +1,5 @@
 {% set name = "awswrangler" %}
-{% set version = "3.10.1" %}
+{% set version = "3.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2c12c522ddf4f59214bb7b79ecab585fa8bb96ea6300e48126962485f1598ddf
+  sha256: bdd05a96907a9d71896b80ec109b2fbc700427ebc2e3e6ed11a0490e135242a6
 
 build:
   noarch: python
@@ -20,12 +20,14 @@ requirements:
     - poetry-core >=1.0.0
     - pip
   run:
+    - geopandas >=0.13.2,<0.14.0
+    - typing_extensions >=4.4.0,<5.0.0
     - python >=3.8,<4.0
     - boto3 >=1.20.32,<2.0.0
     - botocore >=1.23.32,<2.0.0
     - pandas >=1.2.0,<3.0.0
-    - numpy >=1.18.0,<3.0.0
-    - pyarrow >=8.0.0
+    - numpy >=1.26,<2.1.0
+    - pyarrow >=18.0.0,<19.0.0
     - typing-extensions >=4.4.0,<5.0.0
     - packaging >=21.1,<25.0
     - setuptools
