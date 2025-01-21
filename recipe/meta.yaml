@@ -11,18 +11,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - pip
   run:
     - geopandas >=0.13.2,<0.14.0
     - typing_extensions >=4.4.0,<5.0.0
-    - python >=3.8,<4.0
+    - python >={{ python_min }},<4.0
     - boto3 >=1.20.32,<2.0.0
     - botocore >=1.23.32,<2.0.0
     - pandas >=1.2.0,<3.0.0
@@ -66,6 +66,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://aws-sdk-pandas.readthedocs.io
