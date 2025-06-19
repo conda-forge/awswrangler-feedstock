@@ -158,12 +158,10 @@ Feedstock Maintainers
 =====================
 
 * [@BastianZim](https://github.com/BastianZim/)
-* [@LeonLuttenberger](https://github.com/LeonLuttenberger/)
-* [@cnfait](https://github.com/cnfait/)
+* [@EthanBunce](https://github.com/EthanBunce/)
 * [@igorborgest](https://github.com/igorborgest/)
 * [@jaidisido](https://github.com/jaidisido/)
 * [@kukushking](https://github.com/kukushking/)
-* [@malachi-constant](https://github.com/malachi-constant/)
 * [@maximerihouey](https://github.com/maximerihouey/)
 * [@ncolomer](https://github.com/ncolomer/)
 * [@nicolas-geniteau](https://github.com/nicolas-geniteau/)
