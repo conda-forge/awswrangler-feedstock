@@ -166,6 +166,3 @@ Feedstock Maintainers
 * [@ncolomer](https://github.com/ncolomer/)
 * [@nicolas-geniteau](https://github.com/nicolas-geniteau/)
 
-
-<!-- dummy commit to enable rerendering -->
-
