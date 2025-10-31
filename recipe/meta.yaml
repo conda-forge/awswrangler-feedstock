@@ -42,7 +42,7 @@ requirements:
     - gremlinpython >=3.7.1,<4.0.0
     - sparqlwrapper >=2.0.0,<3.0.0
     - requests >=2.0.0,<3.0.0
-    - aiohttp >=3.9.0,<4.0.0
+    - aiohttp >=3.12.14,<4.0.0
     - async-timeout >=4.0.3,<6.0.0
     # OpenSearch
     - opensearch-py >=2,<4
