@@ -55,7 +55,7 @@ requirements:
     - deltalake >=0.18.0,<0.26.0
     - geopandas >=1.0.0,<2
     # Distributed
-    - modin >=0.31,<0.3
+    - modin >=0.31,<0.38
     - ray >=2.49.0,<3
 
 
