@@ -37,7 +37,7 @@ requirements:
     - pymysql >=1.0.0,<2.0.0
     - pg8000 >=1.29.0,<2.0.0
     - pyodbc >=4.0.0,<6.0.0
-    - oracledb >=1.0.0,<3.0.0
+    - oracledb >=1.0.0,<4.0.0
     # Graph
     - gremlinpython >=3.7.1,<4.0.0
     - sparqlwrapper >=2.0.0,<3.0.0
