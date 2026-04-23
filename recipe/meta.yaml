@@ -92,6 +92,8 @@ about:
 
 extra:
   recipe-maintainers:
+    - cnfait
+    - malachi-constant
     - nicolas-geniteau
     - maximerihouey
     - ncolomer
