@@ -54,7 +54,7 @@ requirements:
     - rdflib >=6.0.0,=6.0
     - deltalake >=0.18.0,<1.6.0
     - geopandas >=1.0.0,<2
-    - pyiceberg[pyarrow] >=0.7.0,<1
+    - pyiceberg >=0.7.0,<1
     # Distributed
     - modin >=0.31,<0.38
     - ray >=2.49.0,<3
